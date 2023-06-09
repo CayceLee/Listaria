@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">ListArea</string>
+    <string name="listarea">LISTAREA</string>
+    <string name="listoflistsactivity">ListOfListsActivity</string>
+    <string name="map_image">map_image</string>
+    <string name="my_lists">My Lists</string>
+    <string name="no_lists">No Lists</string>
+    <string name="item_text" />
+    <string name="title">Title</string>
+    <string name="body">Body</string>
+    <string name="button_add_list_text">+</string>
+    <string name="enter_list_title">Enter List Title</string>
+    <string name="gps_enabled">ON:</string>
+    <string name="gps_disabled">OFF</string>
+    <string name="enter_list_items">Enter list items</string>
+    <string name="gps_description">Enable GPS for this list?</string>
+    <string name="delete_list">Delete List</string>
+    <string name="deleteOption">DELETE</string>
+    <string name="enable_disable_gps">Enable / Disable GPS</string>
+    <array name="StoreCategories">
+        <item>(Select a list category)</item>
+        <item>Grocery</item>
+        <item>Hardware</item>
+        <item>Department</item>
+        <item>Home Decor</item>
+        <item>Furniture</item>
+        <item>Automotive</item>
+        <item>Electronics</item>
+        <item>Pet</item>
+        <item>Sports</item>
+        <item>Music</item>
+        <item>Book</item>
+        <item>Cosmetics</item>
+        <item>Child Care</item>
+        <item>Toys/Games</item>
+        <item>Thrift</item>
+        <item>Liquor</item>
+        <item>Smoke/Dispensary</item>
+        <item>Adult</item>
+        <item>Agriculture</item>
+        <item>Pharmacy</item>
+        <item>Garden</item>
+        <item>Karaoke</item>
+    </array>
+    <array name="OptionsMenu">
+        <item>Delete</item>
+    </array>
+</resources>

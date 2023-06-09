@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "894714535361",
+    "project_id": "listaria",
+    "storage_bucket": "listaria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894714535361:android:ccf0314ee86d7e21fe2340",
+        "android_client_info": {
+          "package_name": "com.example.listaria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894714535361-b5q0kobotruagi1kognpnvfg3mr362ir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2elyZBqb8KXzHK1Y9alG01ajsqWKd-fI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894714535361-b5q0kobotruagi1kognpnvfg3mr362ir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

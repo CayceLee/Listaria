@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/current_list_view"
+        android:background="#d3d3d3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <EditText
+            android:id="@+id/editTextField"
+            android:layout_width="310dp"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            tools:autofillHints="Groceries, Hardware, Pets, Household"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="@string/enter_list_title"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#757575"
+            app:layout_constraintBottom_toTopOf="@+id/category"
+            app:layout_constraintRight_toLeftOf="@id/gpsToggleButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/trashButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/remove_items_button"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:clickable="true" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/gpsToggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:tooltipText="Enable/Disable GPS"
+            app:layout_constraintBottom_toTopOf="@+id/user_entered_item"
+            app:layout_constraintEnd_toStartOf="@+id/category"
+            app:layout_constraintLeft_toRightOf="@id/editTextField"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextField"
+            app:layout_constraintVertical_bias="0.807"
+            tools:tooltipText="@string/gps_description" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="242dp"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@id/user_entered_item"
+            app:layout_constraintHorizontal_bias="0.905"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextField"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/user_entered_item"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLines="1"
+            tools:hint="Add an item to your list"
+            app:layout_constraintBottom_toTopOf="@+id/opened_list_items"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/opened_list_items"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_entered_item"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_list_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/add_list_button"
+            android:gravity="center"
+            android:text="@string/button_add_list_text"
+            android:textColor="@color/material_dynamic_neutral0"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:clickable="true" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/cancel_new_list_button"
+            android:gravity="center"
+            android:text="x"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:clickable="true" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_item_to_list_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/add_list_button"
+            tools:clickable="true"
+            android:gravity="center"
+            android:text="@string/button_add_list_text"
+            android:textColor="@color/black"
+            tools:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/user_entered_item"
+            app:layout_constraintStart_toEndOf="@+id/user_entered_item"
+            app:layout_constraintTop_toTopOf="@+id/user_entered_item"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
