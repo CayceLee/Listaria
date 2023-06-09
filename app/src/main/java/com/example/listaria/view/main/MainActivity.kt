@@ -100,8 +100,6 @@ class MainActivity : AppCompatActivity() {
 //            }
         }
 
-
-
         //Setup menu and popup
         val menuButton = findViewById<ImageButton>(R.id.menuBtn)
         val popUpMenu = PopupMenu(this,menuButton)
