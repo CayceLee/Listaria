@@ -100,6 +100,9 @@ class MainActivity : AppCompatActivity() {
 //            }
         }
 
+//        StoreSearcher(this).nearbyStoreSearch(searchCategory, listSetWithGpsOn)
+
+
         //Setup menu and popup
         val menuButton = findViewById<ImageButton>(R.id.menuBtn)
         val popUpMenu = PopupMenu(this,menuButton)
