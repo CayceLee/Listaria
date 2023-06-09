@@ -100,7 +100,6 @@ class MainActivity : AppCompatActivity() {
 //            }
         }
 
-//        StoreSearcher(this).nearbyStoreSearch(searchCategory, listSetWithGpsOn)
 
 
         //Setup menu and popup
